@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SMTG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SMTG>
+    <HEADER>
+     <ID>ZZ1_YY1_00800303</ID>
+     <VERSION>A</VERSION>
+     <CDS_VIEW>C_SUPLRINVCWRKFLWEMLDCSNRSN</CDS_VIEW>
+     <PARENT_ID>MRM_COIV_WF_APPROVE</PARENT_ID>
+     <ORIGINAL_ID>MRM_COIV_WF_APPROVE</ORIGINAL_ID>
+    </HEADER>
+    <HEADER_T>
+     <SMTG_TMPL_HDR_T>
+      <ID>ZZ1_YY1_00800303</ID>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <NAME>Email Notification for Completed Supplier Invoice Approval</NAME>
+      <DESCRIPTION>Email Notification for Completed Supplier Invoice Approval</DESCRIPTION>
+     </SMTG_TMPL_HDR_T>
+    </HEADER_T>
+    <CONTENT>
+     <SMTG_TMPL_CONT>
+      <ID>ZZ1_YY1_00800303</ID>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <SUBJECT>Supplier Invoice {{SupplierInvoice}} {{FiscalYear}} is Approved</SUBJECT>
+      <BODY_TXT>Dear User,
+the workflow for the completed supplier invoice  {{SupplierInvoice}}  /  {{FiscalYear}}  /  {{CompanyCodeName}} ({{CompanyCode}}) for supplier  {{SupplierName}} ({{InvoicingParty}}) with amount  {{InvoiceGrossAmount}} {{DocumentCurrency}}  has been approved.
+Best Regards</BODY_TXT>
+      <BODY_HTML>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;HTML Tidy for HTML5 for ABAP version 5.6.0&quot;&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Dear User,&lt;br&gt;
+&lt;p&gt;
+the workflow for the completed supplier invoice  {{SupplierInvoice}}  /  {{FiscalYear}}  /  {{CompanyCodeName}} ({{CompanyCode}}) for supplier  {{SupplierName}} ({{InvoicingParty}}) with amount  {{InvoiceGrossAmount}} {{DocumentCurrency}}  has been approved.&lt;br&gt;
+&lt;br&gt;
+Best Regards
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</BODY_HTML>
+     </SMTG_TMPL_CONT>
+     <SMTG_TMPL_CONT>
+      <ID>ZZ1_YY1_00800303</ID>
+      <VERSION>A</VERSION>
+      <LANGU>D</LANGU>
+      <SUBJECT>Lieferantenrechnung {{SupplierInvoice}} {{FiscalYear}} genehmigt</SUBJECT>
+      <BODY_TXT>Sehr geehrter Benutzer,
+der Workflow für die vervollständigte Lieferantenrechnung  {{SupplierInvoice}}  /  {{FiscalYear}}  /  {{CompanyCodeName}} ({{CompanyCode}}) für Lieferant  {{SupplierName}} ({{InvoicingParty}}) mit dem Betrag  {{InvoiceGrossAmount}} {{DocumentCurrency}}  wurde genehmigt.
+Mit freundlichen Grüßen</BODY_TXT>
+      <BODY_HTML>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;meta content=&quot;HTML Tidy for HTML5 for ABAP version 5.6.0&quot; name=&quot;generator&quot; /&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body data-bodyexists=&quot;true&quot;&gt;
+  Sehr geehrter Benutzer,&lt;br /&gt;
+  &lt;p&gt;der Workflow für die vervollständigte Lieferantenrechnung {{SupplierInvoice}} / {{FiscalYear}} / {{CompanyCodeName}} ({{CompanyCode}}) für Lieferant {{SupplierName}} ({{InvoicingParty}}) mit dem Betrag {{InvoiceGrossAmount}}{{DocumentCurrency}} wurde genehmigt.&lt;br /&gt;
+  &lt;br /&gt;
+  Mit freundlichen Grüßen&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</BODY_HTML>
+     </SMTG_TMPL_CONT>
+    </CONTENT>
+   </SMTG>
+  </asx:values>
+ </asx:abap>
+</abapGit>

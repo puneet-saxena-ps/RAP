@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SMTG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SMTG>
+    <HEADER>
+     <ID>ZZ1_YY1_99900001_CRT_9</ID>
+     <VERSION>A</VERSION>
+     <CDS_VIEW>C_WORKFLOWTASK</CDS_VIEW>
+     <PARENT_ID>ZZ1_YY1_00800238_CRT_19</PARENT_ID>
+     <ORIGINAL_ID>SWF_CRT_NOTIFY_RECIPIENTS</ORIGINAL_ID>
+    </HEADER>
+    <HEADER_T>
+     <SMTG_TMPL_HDR_T>
+      <ID>ZZ1_YY1_99900001_CRT_9</ID>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <NAME>Template to inform task recipients</NAME>
+      <DESCRIPTION>Can be used to send notification mail to the recipients of the work item. The custom templates has to follow the pattern: &lt;YY1&gt;_&lt;ScenarioId&gt;_&lt;CRT&gt;_&lt;ACTIVITY_NODEID&gt; or &lt;YY1&gt;_&lt;ScenarioId&gt;_CRT_ALL</DESCRIPTION>
+     </SMTG_TMPL_HDR_T>
+    </HEADER_T>
+    <CONTENT>
+     <SMTG_TMPL_CONT>
+      <ID>ZZ1_YY1_99900001_CRT_9</ID>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <SUBJECT>Please {{TaskName}}</SUBJECT>
+      <BODY_TXT>The task instance with the internal id  &apos;{{WorkflowTaskInternalID}}&apos; and the name  &apos;{{TaskName}}&apos; was created
+for you. Please check your inbox
+https://vhpptds4ci.sap.ps.com:44300/sap/bc/ui2/flp?sap-client=050&amp;sap-language=EN#WorkflowTask-displayInbox?allItems=true&amp;/empty_view
+
+</BODY_TXT>
+      <BODY_HTML>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 3.2//EN&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;HTML Tidy for HTML5 for ABAP version 5.6.0&quot;&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Dear Approver,&lt;p&gt;
+        &lt;p&gt; Please check your SAP inbox, and Review &amp; {{TaskName}} that was created. Kindly find below link for SAP Inbox.
+&lt;p&gt;&lt;p&gt;https://vhpptds4ci.sap.ps.com:44300/sap/bc/ui2/flp?sap-client=110&amp;sap-language=EN#WorkflowTask-displayInbox? &lt;p&gt;
+        &lt;p&gt; Have any questions or need any clarification, Please contact the Purchase Order creator.&lt;p&gt;
+
+&lt;p&gt;Thanks,&lt;p&gt;
+&lt;p&gt;Public Storage Procurement team.&lt;p&gt;
+&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</BODY_HTML>
+     </SMTG_TMPL_CONT>
+    </CONTENT>
+   </SMTG>
+  </asx:values>
+ </asx:abap>
+</abapGit>
